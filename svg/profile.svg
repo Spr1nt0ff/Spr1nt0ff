@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg width="100%" height="100%" viewBox="0 0 800 1900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.9" flood-color="#000000"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-opacity="0.7" flood-color="#fdfae8"/>
+    </filter>
+
+    <radialGradient id="fog" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2a2a2a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1" />
+    </radialGradient>
+
+    <linearGradient id="cave-ceiling" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="1" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="hairy" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+
+
+  <rect width="100%" height="100%" fill="#050505" />
+
+  <rect width="100%" height="100%" fill="url(#fog)" />
+
+
+
+  <g id="moon">
+
+    <circle cx="680" cy="100" r="45" fill="#fdfae8" opacity="0.1" />
+
+    <circle cx="680" cy="100" r="30" fill="#fdfae8" opacity="0.3" filter="url(#shadow)" />
+
+    <circle cx="680" cy="100" r="25" fill="#fdfae8" opacity="0.5" />
+
+  </g>
+
+ <text x="400" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="75" font-weight="900" fill="#fdfae8" text-anchor="middle" letter-spacing="4" filter="url(#shadow)">SPR1NTOFF</text>
+  <text x="400" y="200" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="600" fill="#d1d1b8" text-anchor="middle" letter-spacing="2" filter="url(#shadow)">FULL STACK DEVELOPER</text>
+
+
+  <path d="M0,350 Q100,320 150,340 T350,330 L800,380 L800,500 L0,500 Z" fill="#000000" opacity="0.6"/>
+
+
+
+  <g id="limbo-boy" transform="translate(240, 290) scale(0.5)">
+
+    <path d="M55 4.0927C46.6 1.2927 40.1667 8.5927 38 12.5927C35.2 11.7926 34.8333 18.9261 35 22.5928C33.5 23.0928 39.5 34.5928 44 36.5928C47.6 38.1928 48.1667 40.5928 48 41.5928C47.1667 42.2594 44.4 43.3928 40 42.5928C34.5 41.5928 18.5 55.5928 18.5 57.5928C18.5 59.1928 15.1667 61.2594 13.5 62.0928C12 62.7594 9.4 64.4928 11 66.0928C12.6 67.6928 16 66.7594 17.5 66.0928C17.8333 65.0928 19 63.0928 21 63.0928C23 63.0928 32.8333 55.0928 37.5 51.0928V54.5928C31.5 62.0928 25 88.5928 24 90.0928C23.2 91.2928 18 89.9261 15.5 89.0928C15.9 86.6928 12.6667 85.0928 11 84.5928C8.6 84.5928 4.33333 89.5928 2.5 92.0928C1.4 93.5928 0.5 94.4261 0.5 95.0928H6C7.5 95.5928 10.5 91.5928 14.5 91.0928C18.5 90.5928 22 94.5928 24.5 97.0928C26.5 99.0928 29 98.5928 30 98.0928C31 97.5928 33.5 96.0928 35.5 94.0928C37.5 92.0928 40 92.5928 41 93.0928L47 97.5928L46.5 107.093C48.9 108.293 52.5 106.593 54 105.593C53.1667 105.259 51.2 104.593 50 104.593C48.8 104.593 49.1667 98.9261 49.5 96.0928L54 92.5928L51.5 88.0928C49.5 86.8928 50 84.5928 50.5 83.5928C51.6667 79.9261 54.2 72.0928 55 70.0928C55.8 68.0928 57.6667 68.9261 58.5 69.5928L69.5 76.5928C71.1667 76.0928 75.1 75.6928 77.5 78.0928C79.9 80.4928 82.5 79.0928 83.5 78.0928C83.3333 76.5928 82.7 73.5928 81.5 73.5928C80.3 73.5928 78.3333 72.5928 77.5 72.0928C73.3333 69.4261 64.5 63.5928 62.5 61.5928C60.5 59.5928 60.3333 48.0928 60.5 42.5928L73 36.5928C73.8 36.5928 75 34.2594 75.5 33.0928V18.0928C75.5 15.6928 77.5 15.0928 78.5 15.0928L80.5 14.0928V11.0928H83.5V7.59277L82 6.09277L81 4.59277H78.5L77.5 3.09277L75.5 3.59277L75 2.09277H64.5L62.5 0.592773C60.6667 1.59277 56.6 3.69276 55 4.0927Z" fill="#010001" stroke="black"/>
+
+    <g>
+
+      <path d="M59.9998 27.5931C58.3998 27.5931 58.3331 25.2597 58.4998 24.0931C60.4996 22.5931 62.5 23.0931 63 24.5931C63.5 26.0931 61.9998 27.5931 59.9998 27.5931Z" fill="#D3D0C0" stroke="#D3D0C0"/>
+
+      <path d="M73.5 26.5926C72.7 27.3926 71.1667 26.2593 70.5 25.5926C70 24.5926 70.5 24.0931 71 23.0926C74 21.5922 74.5 25.5926 73.5 26.5926Z" fill="#D3D0C0" stroke="#D3D0C0"/>
+
+      <animate attributeName="opacity" values="1; 1; 0; 1; 0; 1; 0; 1; 1" keyTimes="0; 0.6; 0.65; 0.7; 0.75; 0.8; 0.85; 0.9; 1" dur="4s" repeatCount="indefinite" />
+
+    </g>
+
+  </g>
+
+
+
+ 
+
+
+
+  <rect x="0" y="500" width="100%" height="50" fill="#000000" />
+
+  <rect x="0" y="550" width="100%" height="150" fill="url(#cave-ceiling)" />
+
+
+
+  <g transform="translate(0, 537)">
+
+    <text x="400" y="140" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#7a7a7a" text-anchor="middle" letter-spacing="4">// LANGUAGES</text>
+    <text x="400" y="380" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#7a7a7a" text-anchor="middle" letter-spacing="4">// FRAMEWORKS &amp; WEB</text>
+    <text x="400" y="640" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#7a7a7a" text-anchor="middle" letter-spacing="4">// DATABASES &amp; INFRA</text>
+    <text x="400" y="940" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#7a7a7a" text-anchor="middle" letter-spacing="4">// TOOLS &amp; IDEs</text>
+
+
+    <g stroke="#1a1a1a" stroke-width="2" fill="none" opacity="0.6">
+
+      <animate attributeName="opacity" values="0.3; 0.7; 0.3" dur="5s" repeatCount="indefinite" />
+
+      <line x1="400" y1="0" x2="400" y2="1500" />
+
+      <line x1="400" y1="0" x2="100" y2="1450" />
+
+      <line x1="400" y1="0" x2="700" y2="1450" />
+
+      <line x1="400" y1="0" x2="-100" y2="900" />
+
+      <line x1="400" y1="0" x2="900" y2="900" />
+
+      <line x1="400" y1="0" x2="-50" y2="450" />
+
+      <line x1="400" y1="0" x2="850" y2="450" />
+
+     
+
+      <path d="M300,150 Q400,180 500,150" />
+
+      <path d="M225,260 Q400,310 575,260" />
+
+      <path d="M125,400 Q400,470 675,400" />
+
+      <path d="M50,220 Q200,200 300,150" />
+
+      <path d="M750,220 Q600,200 500,150" />
+
+      <path d="M-20,320 Q100,300 225,260" />
+
+      <path d="M820,320 Q700,300 575,260" />
+
+      <path d="M200,550 Q400,600 600,550" />
+
+      <path d="M100,700 Q400,760 700,700" />
+
+      <path d="M60,850 Q400,920 740,850" />
+
+      <path d="M110,1050 Q400,1100 690,1050" />
+
+      <path d="M140,1200 Q400,1250 660,1200" />
+
+      <path d="M180,1350 Q400,1400 620,1350" />
+
+    </g>
+
+
+
+    <line x1="400" y1="0" x2="400" y2="0" stroke="#fdfae8" stroke-width="1" opacity="0.6">
+
+      <animate attributeName="y2" values="0; 1185; 1185; 0" keyTimes="0; 0.4; 0.6; 1" dur="20s" repeatCount="indefinite"/>
+
+    </line>
+
+
+
+    <g>
+
+      <animateTransform attributeName="transform" type="translate"
+
+        values="0,-85; 0,1100; 0,1100; 0,-85"
+
+        keyTimes="0; 0.4; 0.6; 1" dur="20s" repeatCount="indefinite" />
+
+     
+
+      <g transform="translate(280, -20) scale(0.3)">
+
+        <g filter="url(#hairy)" opacity="0.85">
+
+          <path d="M250,600 Q150,300 50,200" stroke="#000000" stroke-width="18" fill="none" stroke-linecap="round"><animate attributeName="d" values="M250,600 Q150,300 50,200; M250,600 Q120,280 40,220; M250,600 Q150,300 50,200" dur="2s" repeatCount="indefinite" /></path>
+
+          <path d="M300,600 Q100,200 200,100" stroke="#000000" stroke-width="20" fill="none" stroke-linecap="round"><animate attributeName="d" values="M300,600 Q100,200 200,100; M300,600 Q80,180 220,120; M300,600 Q100,200 200,100" dur="2.5s" repeatCount="indefinite" /></path>
+
+          <path d="M550,600 Q650,300 750,200" stroke="#000000" stroke-width="18" fill="none" stroke-linecap="round"><animate attributeName="d" values="M550,600 Q650,300 750,200; M550,600 Q680,280 760,220; M550,600 Q650,300 750,200" dur="2s" repeatCount="indefinite" /></path>
+
+          <path d="M500,600 Q700,200 600,100" stroke="#000000" stroke-width="20" fill="none" stroke-linecap="round"><animate attributeName="d" values="M500,600 Q700,200 600,100; M500,600 Q720,180 580,120; M500,600 Q700,200 600,100" dur="2.5s" repeatCount="indefinite" /></path>
+
+          <path d="M350,420 Q300,350 320,380" stroke="#000000" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+          <path d="M450,420 Q500,350 480,380" stroke="#000000" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+        </g>
+
+        <ellipse cx="400" cy="520" rx="180" ry="120" fill="#000000" />
+
+        <ellipse cx="400" cy="420" rx="100" ry="70" fill="#000000" />
+
+        <circle cx="360" cy="380" r="6" fill="#fdfae8" filter="url(#glow)"><animate attributeName="opacity" values="1; 0.3; 1" dur="1s" repeatCount="indefinite" /></circle>
+
+        <circle cx="440" cy="380" r="6" fill="#fdfae8" filter="url(#glow)"><animate attributeName="opacity" values="1; 0.3; 1" dur="1.2s" repeatCount="indefinite" /></circle>
+
+        <circle cx="380" cy="360" r="4" fill="#fdfae8" filter="url(#glow)"><animate attributeName="opacity" values="1; 0.2; 1" dur="1.5s" repeatCount="indefinite" /></circle>
+
+        <circle cx="420" cy="360" r="4" fill="#fdfae8" filter="url(#glow)"><animate attributeName="opacity" values="1; 0.2; 1" dur="1.3s" repeatCount="indefinite" /></circle>
+
+      </g>
+
+    </g>
+
+
+
+    <!-- ЯЗЫКИ ПРОГРАММИРОВАНИЯ -->
+
+    <g transform="translate(230, 200)">
+
+      <animateTransform attributeName="transform" type="translate" values="230,200; 230,203; 230,200" dur="3.5s" repeatCount="indefinite" />
+
+      <rect width="90" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">C++</text>
+
+    </g>
+
+    <g transform="translate(480, 210)">
+
+      <animateTransform attributeName="transform" type="translate" values="480,210; 480,207; 480,210" dur="4.2s" repeatCount="indefinite" />
+
+      <rect width="80" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">C#</text>
+
+    </g>
+
+    <g transform="translate(150, 260)">
+
+      <animateTransform attributeName="transform" type="translate" values="150,260; 150,264; 150,260" dur="4.5s" repeatCount="indefinite" />
+
+      <rect width="140" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">JAVASCRIPT</text>
+
+    </g>
+
+    <g transform="translate(550, 250)">
+
+      <animateTransform attributeName="transform" type="translate" values="550,250; 550,246; 550,250" dur="5s" repeatCount="indefinite" />
+
+      <rect width="140" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">TYPESCRIPT</text>
+
+    </g>
+
+    <g transform="translate(360, 290)">
+
+      <animateTransform attributeName="transform" type="translate" values="360,290; 360,293; 360,290" dur="3s" repeatCount="indefinite" />
+
+      <rect width="90" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">JAVA</text>
+
+    </g>
+
+
+
+    <!-- ТЕХНОЛОГИИ / ФРЕЙМВОРКИ -->
+
+    <g transform="translate(200, 430)">
+
+      <animateTransform attributeName="transform" type="translate" values="200,430; 200,426; 200,430" dur="4.8s" repeatCount="indefinite" />
+
+      <rect width="120" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">HTML/CSS</text>
+
+    </g>
+
+    <g transform="translate(520, 440)">
+
+      <animateTransform attributeName="transform" type="translate" values="520,440; 520,443; 520,440" dur="3.6s" repeatCount="indefinite" />
+
+      <rect width="100" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">REACT</text>
+
+    </g>
+
+    <g transform="translate(630, 480)">
+
+      <animateTransform attributeName="transform" type="translate" values="630,480; 630,477; 630,480" dur="4.1s" repeatCount="indefinite" />
+
+      <rect width="115" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">ANGULAR</text>
+
+    </g>
+
+    <g transform="translate(350, 480)">
+
+      <animateTransform attributeName="transform" type="translate" values="350,480; 350,484; 350,480" dur="5.5s" repeatCount="indefinite" />
+
+      <rect width="120" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">ASP.NET</text>
+
+    </g>
+
+    <g transform="translate(120, 500)">
+
+      <animateTransform attributeName="transform" type="translate" values="120,500; 120,497; 120,500" dur="3.2s" repeatCount="indefinite" />
+
+      <rect width="110" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">NODE.JS</text>
+
+    </g>
+
+    <g transform="translate(500, 540)">
+
+      <animateTransform attributeName="transform" type="translate" values="500,540; 500,543; 500,540" dur="4.6s" repeatCount="indefinite" />
+
+      <rect width="105" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">SPRING</text>
+
+    </g>
+
+
+
+    <!-- БАЗЫ ДАННЫХ / БРОКЕРЫ -->
+
+    <g transform="translate(420, 690)">
+
+      <animateTransform attributeName="transform" type="translate" values="420,690; 420,694; 420,690" dur="5.2s" repeatCount="indefinite" />
+
+      <rect width="140" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">SQL SERVER</text>
+
+    </g>
+
+    <g transform="translate(630, 710)">
+
+      <animateTransform attributeName="transform" type="translate" values="630,710; 630,707; 630,710" dur="3.9s" repeatCount="indefinite" />
+
+      <rect width="100" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">MYSQL</text>
+
+    </g>
+
+    <g transform="translate(150, 740)">
+
+      <animateTransform attributeName="transform" type="translate" values="150,740; 150,744; 150,740" dur="4.4s" repeatCount="indefinite" />
+
+      <rect width="100" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+     <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">REDIS</text>
+
+    </g>
+
+    <g transform="translate(320, 780)">
+
+      <animateTransform attributeName="transform" type="translate" values="320,780; 320,776; 320,780" dur="5.1s" repeatCount="indefinite" />
+
+      <rect width="140" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">CLICKHOUSE</text>
+
+    </g>
+
+    <g transform="translate(560, 810)">
+
+      <animateTransform attributeName="transform" type="translate" values="560,810; 560,814; 560,810" dur="3.4s" repeatCount="indefinite" />
+
+      <rect width="130" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">RABBITMQ</text>
+
+    </g>
+
+    <g transform="translate(680, 860)">
+
+      <animateTransform attributeName="transform" type="translate" values="680,860; 680,857; 680,860" dur="4.7s" repeatCount="indefinite" />
+
+      <rect width="100" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">LINUX</text>
+
+    </g>
+
+
+
+    <!-- ИНСТРУМЕНТЫ / ТУЛЗЫ -->
+
+    <g transform="translate(120, 990)">
+
+      <animateTransform attributeName="transform" type="translate" values="120,990; 120,994; 120,990" dur="3.1s" repeatCount="indefinite" />
+
+      <rect width="80" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">GIT</text>
+
+    </g>
+
+    <g transform="translate(280, 1020)">
+
+      <animateTransform attributeName="transform" type="translate" values="280,1020; 280,1016; 280,1020" dur="5.3s" repeatCount="indefinite" />
+
+      <rect width="110" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">GITHUB</text>
+
+    </g>
+
+    <g transform="translate(520, 990)">
+
+      <animateTransform attributeName="transform" type="translate" values="520,990; 520,993; 520,990" dur="3.9s" repeatCount="indefinite" />
+
+      <rect width="100" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">FIGMA</text>
+
+    </g>
+
+    <g transform="translate(650, 1040)">
+
+      <animateTransform attributeName="transform" type="translate" values="650,1040; 650,1044; 650,1040" dur="4.2s" repeatCount="indefinite" />
+
+      <rect width="75" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">VS</text>
+
+    </g>
+
+    <g transform="translate(180, 1090)">
+
+      <animateTransform attributeName="transform" type="translate" values="180,1090; 180,1087; 180,1090" dur="3.7s" repeatCount="indefinite" />
+
+      <rect width="85" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">VSC</text>
+
+    </g>
+
+    <g transform="translate(420, 1130)">
+
+      <animateTransform attributeName="transform" type="translate" values="420,1130; 420,1133; 420,1130" dur="4.9s" repeatCount="indefinite" />
+
+      <rect width="100" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">RIDER</text>
+
+    </g>
+
+    <g transform="translate(600, 1150)">
+
+      <animateTransform attributeName="transform" type="translate" values="600,1150; 600,1146; 600,1150" dur="5.6s" repeatCount="indefinite" />
+
+      <rect width="95" height="32" rx="3" fill="#050505" stroke="#333" stroke-width="2" />
+
+      <text x="34" y="21" font-family="'Segoe UI', monospace" font-size="14" font-weight="bold" fill="#fdfae8" text-anchor="start">SSMS</text>
+
+    </g>
+
+  </g>
+
+
+
+  <g id="giant-spider">
+
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="6s" repeatCount="indefinite" />
+
+    <g filter="url(#hairy)" opacity="0.85">
+
+      <path d="M250,600 Q150,300 50,200" stroke="#000000" stroke-width="18" fill="none" stroke-linecap="round"><animate attributeName="d" values="M250,600 Q150,300 50,200; M250,600 Q120,280 40,220; M250,600 Q150,300 50,200" dur="6s" repeatCount="indefinite" /></path>
+
+      <path d="M300,600 Q100,200 200,100" stroke="#000000" stroke-width="20" fill="none" stroke-linecap="round"><animate attributeName="d" values="M300,600 Q100,200 200,100; M300,600 Q80,180 220,120; M300,600 Q100,200 200,100" dur="7s" repeatCount="indefinite" /></path>
+
+      <path d="M550,600 Q650,300 750,200" stroke="#000000" stroke-width="18" fill="none" stroke-linecap="round"><animate attributeName="d" values="M550,600 Q650,300 750,200; M550,600 Q680,280 760,220; M550,600 Q650,300 750,200" dur="6s" repeatCount="indefinite" /></path>
+
+      <path d="M500,600 Q700,200 600,100" stroke="#000000" stroke-width="20" fill="none" stroke-linecap="round"><animate attributeName="d" values="M500,600 Q700,200 600,100; M500,600 Q720,180 580,120; M500,600 Q700,200 600,100" dur="7s" repeatCount="indefinite" /></path>
+
+      <path d="M350,420 Q300,350 320,380" stroke="#000000" stroke-width="22" fill="none" stroke-linecap="round"><animate attributeName="d" values="M350,420 Q300,350 320,380; M350,420 Q290,340 310,390; M350,420 Q300,350 320,380" dur="4s" repeatCount="indefinite" /></path>
+
+      <path d="M450,420 Q500,350 480,380" stroke="#000000" stroke-width="22" fill="none" stroke-linecap="round"><animate attributeName="d" values="M450,420 Q500,350 480,380; M450,420 Q510,340 490,390; M450,420 Q500,350 480,380" dur="4s" repeatCount="indefinite" /></path>
+
+    </g>
+
+    <path d="M250,600 Q150,300 50,200" stroke="#000000" stroke-width="12" fill="none" stroke-linecap="round"><animate attributeName="d" values="M250,600 Q150,300 50,200; M250,600 Q120,280 40,220; M250,600 Q150,300 50,200" dur="6s" repeatCount="indefinite" /></path>
+
+    <path d="M300,600 Q100,200 200,100" stroke="#000000" stroke-width="14" fill="none" stroke-linecap="round"><animate attributeName="d" values="M300,600 Q100,200 200,100; M300,600 Q80,180 220,120; M300,600 Q100,200 200,100" dur="7s" repeatCount="indefinite" /></path>
+
+    <path d="M550,600 Q650,300 750,200" stroke="#000000" stroke-width="12" fill="none" stroke-linecap="round"><animate attributeName="d" values="M550,600 Q650,300 750,200; M550,600 Q680,280 760,220; M550,600 Q650,300 750,200" dur="6s" repeatCount="indefinite" /></path>
+
+    <path d="M500,600 Q700,200 600,100" stroke="#000000" stroke-width="14" fill="none" stroke-linecap="round"><animate attributeName="d" values="M500,600 Q700,200 600,100; M500,600 Q720,180 580,120; M500,600 Q700,200 600,100" dur="7s" repeatCount="indefinite" /></path>
+
+   
+
+    <ellipse cx="400" cy="520" rx="180" ry="120" fill="#000000" />
+
+    <ellipse cx="400" cy="420" rx="100" ry="70" fill="#000000" />
+
+   
+
+    <path d="M350,420 Q300,350 320,380" stroke="#000000" stroke-width="16" fill="none" stroke-linecap="round"><animate attributeName="d" values="M350,420 Q300,350 320,380; M350,420 Q290,340 310,390; M350,420 Q300,350 320,380" dur="4s" repeatCount="indefinite" /></path>
+
+    <path d="M450,420 Q500,350 480,380" stroke="#000000" stroke-width="16" fill="none" stroke-linecap="round"><animate attributeName="d" values="M450,420 Q500,350 480,380; M450,420 Q510,340 490,390; M450,420 Q500,350 480,380" dur="4s" repeatCount="indefinite" /></path>
+
+
+
+    <circle cx="360" cy="380" r="6" fill="#fdfae8" filter="url(#shadow)"><animate attributeName="opacity" values="1; 0.3; 1" dur="3s" repeatCount="indefinite" /></circle>
+
+    <circle cx="440" cy="380" r="6" fill="#fdfae8" filter="url(#shadow)"><animate attributeName="opacity" values="1; 0.3; 1" dur="3s" repeatCount="indefinite" /></circle>
+
+    <circle cx="380" cy="360" r="4" fill="#fdfae8" filter="url(#shadow)"><animate attributeName="opacity" values="1; 0.2; 1" dur="4s" repeatCount="indefinite" /></circle>
+
+    <circle cx="420" cy="360" r="4" fill="#fdfae8" filter="url(#shadow)"><animate attributeName="opacity" values="1; 0.2; 1" dur="4s" repeatCount="indefinite" /></circle>
+
+  </g>
+
+</svg> 
